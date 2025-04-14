@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_riwayat"
+        android:title="Riwayat Billing"
+        android:icon="@android:drawable/ic_menu_recent_history" />
+    <item android:id="@+id/nav_catatan"
+        android:title="Catatan"
+        android:icon="@android:drawable/ic_menu_edit" />
+    <item android:id="@+id/nav_pengaturan"
+        android:title="Pengaturan"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item android:id="@+id/nav_logout"
+        android:title="Log Out"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>

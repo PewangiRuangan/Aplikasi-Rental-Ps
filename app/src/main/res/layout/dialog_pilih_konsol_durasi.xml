@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- PILIH KONSOL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Konsol"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPs3"
+                style="@style/KonsolButton"
+                android:text="PS3" />
+
+            <Button
+                android:id="@+id/btnPs4"
+                style="@style/KonsolButton"
+
+                android:text="PS4" />
+
+            <Button
+                android:id="@+id/btnPs5"
+                style="@style/KonsolButton"
+                android:text="PS5" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/summaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:paddingTop="16dp"/>
+
+        <!-- PILIH DURASI -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Durasi"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:id="@+id/gridDurasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <Button android:id="@+id/cardDurasi30m" style="@style/DurasiHargaButton" android:text="30 Menit"/>
+            <Button android:id="@+id/cardDurasi1" style="@style/DurasiHargaButton" android:text="1 Jam"/>
+            <Button android:id="@+id/cardDurasi2" style="@style/DurasiHargaButton" android:text="2 Jam"/>
+            <Button android:id="@+id/cardDurasi3" style="@style/DurasiHargaButton" android:text="3 Jam"/>
+            <Button android:id="@+id/cardDurasi4" style="@style/DurasiHargaButton" android:text="4 Jam"/>
+            <Button android:id="@+id/cardDurasi5" style="@style/DurasiHargaButton" android:text="5 Jam"/>
+            <Button android:id="@+id/cardCustomDurasi" style="@style/DurasiHargaButton" android:text="Custom"/>
+        </GridLayout>
+
+        <!-- PILIH HARGA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Harga"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:id="@+id/gridHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <Button android:id="@+id/cardHarga3k" style="@style/DurasiHargaButton" android:text="3k"/>
+            <Button android:id="@+id/cardHarga5k" style="@style/DurasiHargaButton" android:text="5k"/>
+            <Button android:id="@+id/cardHarga10k" style="@style/DurasiHargaButton" android:text="10k"/>
+            <Button android:id="@+id/cardHarga15k" style="@style/DurasiHargaButton" android:text="15k"/>
+            <Button android:id="@+id/cardHarga20k" style="@style/DurasiHargaButton" android:text="20k"/>
+            <Button android:id="@+id/cardHarga25k" style="@style/DurasiHargaButton" android:text="25k"/>
+            <Button android:id="@+id/cardHargaCustom" style="@style/DurasiHargaButton" android:text="Custom"/>
+        </GridLayout>
+
+        <!-- RINGKASAN -->
+        <!-- RINGKASAN -->
+        <LinearLayout
+            android:id="@+id/summaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_default">
+
+            <TextView
+                android:id="@+id/tvRingkasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringkasan akan muncul di sini"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textRingkasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan akan muncul di sini"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:visibility="gone"
+            />
+
+        <!-- TOMBOL AKSI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+
+
+            <Button
+                android:id="@+id/btnKonfirmasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Richboy Billing</string>
+    <string name="pilih_konsol">Pilih Konsol</string>
+    <string name="pilih_durasi">Pilih Durasi</string>
+    <string name="pilih_harga">Pilih Harga</string>
+    <string-array name="satuan_durasi">
+        <item>Menit</item>
+        <item>Jam</item>
+    </string-array>
+    <string-array name="filter_options">
+        <item>Harian</item>
+        <item>Bulanan</item>
+        <item>Tahunan</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string-array name="mode_pendapatan">
+        <item>Harian</item>
+        <item>Bulanan</item>
+    </string-array>
+
+
+</resources>

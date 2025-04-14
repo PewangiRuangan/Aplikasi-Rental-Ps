@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/filter_options" />
+
+    <TextView
+        android:id="@+id/totalPendapatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp 0"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/listRiwayat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
